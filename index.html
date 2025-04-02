@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karam Khaled Albataineh - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Typed.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- jsPDF Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- FontAwesome for icon -->
+   <link rel="icon" type="png" href="favicon.ico">
+</head>
+<body>
+<header class="header">
+  <div class="container header-content">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+      <i class="fas fa-moon"></i>
+    </button>
+    <button class="download-btn" id="download-pdf">
+      <i class="fas fa-download"></i>
+      <a href="Karam_Albataineh_Resume.pdf" download style="text-decoration: none; color: inherit;">Download PDF</a>
+    </button>
+  </div>
+</header>
+
+
+  <main class="container" id="resume">
+    <!-- Profile Section -->
+    <section class="profile-card">
+      <div class="profile-image">
+        <img src="https://cdn-icons-png.flaticon.com/512/924/924915.png" alt="Karam Khaled Albataineh">
+      </div>
+      <h1>Karam Khaled Albataineh</h1>
+      <p class="title">I'm a <span id="typed"></span></p>
+      <div class="social-links">
+        <a href="mailto:karamkb26@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+962798476848" aria-label="Phone"><i class="fas fa-phone"></i></a>
+        <a href="https://www.linkedin.com/in/karam-albataineh-332a2a240/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Karamkb2000" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </section>
+
+    <!-- Education & Skills -->
+    <div class="grid-2">
+      <section class="card">
+        <h2>Education</h2>
+        <div class="education-content">
+          <h3>Bachelor of Science in Computer Science</h3>
+          <p>Yarmouk University</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Technical Skills</h2>
+        <div class="skills-content">
+          <div class="skill-group">
+            <h3>Programming Languages</h3>
+            <div class="badges">
+              <span class="badge">C++</span>
+              <span class="badge">C#</span>
+              <span class="badge">Java</span>
+              <span class="badge">Python</span>
+              <span class="badge">PHP</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>DevOps & Cloud</h3>
+            <div class="badges">
+              <span class="badge">Git</span>
+              <span class="badge">GitHup-Action</span>
+              <span class="badge">Linux</span>
+              <span class="badge">Terraform</span>
+              <span class="badge">Docker</span>
+              <span class="badge">AWS</span>
+              <span class="badge">Jenkins</span>
+              <span class="badge">Kubernetes</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Databases</h3>
+            <div class="badges">
+              <span class="badge">MySQL</span>
+              <span class="badge">SQLite</span>
+              <span class="badge">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Experience -->
+    <section class="card">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Software & DevOps Engineer</h3>
+            <p class="timeline-date">
+              <i class="fas fa-building"></i>
+              Optimum Partners | February 2024 - August 2024
+            </p>
+            <ul>
+              <li>Worked on DevOps tasks, utilizing tools and technologies such as Docker, Linux, and GitHub.</li>
+              <li>Developed and maintained .NET applications using C#, API, following Domain-Driven Design (DDD) principles.</li>
+              <li>Implemented minimal APIs with PostgreSQL as the database.</li>
+              <li>Conducted unit testing to ensure code quality and reliability.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Software Engineer Intern</h3>
+            <p class="timeline-date">
+              <i class="fas fa-building"></i>
+              Atypon | April 2023 - August 2023
+            </p>
+            <ul>
+              <li>Learnt about Java programming, Data structures, Algorithms, Design patterns, and Advanced Java.</li>
+              <li>DevOps: Learnt about Git, Shell scripting, Docker, Agile, Unit testing, Linux, Clean code, Maven, AWS, and Networking.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="card">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Google Maps (Map API)</h3>
+          <p>A web application to help users search for specific locations including a country, city, or specific places around the world, and calculate the traveling distance between any two locations.</p>
+          <a href="https://github.com/Karamkb2000/Map_API.git" target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+            View on GitHub
+          </a>
+        </div>
+
+        <div class="project-card">
+          <h3>Terraform AWS WordPress</h3>
+          <p>Terraform configurations to set up a 3-tier architecture on AWS for hosting a WordPress application, consisting of a web layer, an application layer, and a database layer.</p>
+          <a href="https://github.com/Karamkb2000/WordPress-AWS-3Tier" target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+            View on GitHub
+          </a>
+        </div>
+
+        <div class="project-card">
+          <h3>UNO Game Engine</h3>
+          <p>Built an UNO game engine using Java and OOP principles, allowing developers to create their own variations of the UNO game.</p>
+          <a href="https://github.com/Karamkb2000/Uno_Game_Engine/tree/main" target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+            View on GitHub
+          </a>
+        </div>
+
+        <div class="project-card">
+          <h3>Library Management System</h3>
+          <p>Developed a library management system using C# and .NET, employing Domain-Driven Design principles to enhance modularity, maintainability, and scalability.</p>
+          <a href="https://github.com/Karamkb2000/LMS" target="_blank" class="github-link">
+            <i class="fab fa-github"></i>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+	<!-- Certifications -->
+	<section class="card">
+	  <h2>Certifications</h2>
+	  <div class="certifications-grid">
+	    <div class="cert-card">
+	      <h3>HashiCorp Certified: Terraform Associate (003)</h3>
+	      <p class="issuer">Issued by HashiCorp</p>
+	      <a href="https://www.credly.com/badges/313e9c98-716c-4d10-b501-a1ab704e5298/public_url" class="credly-link">
+	      <i class="fab fa-credly"></i>
+		<span>View Credential</span>
+	      </a>
+	    </div>
+	  </div>
+	</section>
+
+
+<!-- Contact Info -->
+<section class="card">
+  <h2>Contact Information</h2>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <p>Email: <a href="mailto:karamkb26@gmail.com">karamkb26@gmail.com</a></p>
+    </div>
+    <div class="contact-card">
+      <p>Phone: <a href="tel:+00962798476848">+00962798476848</a></p>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Karam Khaled Albataineh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Typed.js -->
+<script>
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    if (!localStorage.getItem("theme")) {
+        document.body.classList.remove("light-mode"); // Ensure dark mode
+    } else if (localStorage.getItem("theme") === "light") {
+        document.body.classList.add("light-mode");
+    }
+
+    document.querySelector(".theme-toggle").addEventListener("click", function () {
+        document.body.classList.toggle("light-mode");
+        localStorage.setItem("theme", document.body.classList.contains("light-mode") ? "light" : "dark");
+    });
+});
+
+
+
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+const icon = themeToggle.querySelector('i');
+
+// Load theme from localStorage
+if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    icon.classList.replace('fa-moon', 'fa-sun');
+}
+
+// Toggle theme and store preference
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    const isDarkMode = body.classList.contains('dark-mode');
+    
+    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+
+    icon.classList.toggle('fa-moon');
+    icon.classList.toggle('fa-sun');
+});
+
+
+
+// Initialize Typed.js
+var typed = new Typed('#typed', {
+    strings: ["DevOps Engineer", "Software Engineer"],
+    typeSpeed: 100,
+    backSpeed: 50,
+    loop: true
+});
+
+    </script>
+</body>
+</html>
+
