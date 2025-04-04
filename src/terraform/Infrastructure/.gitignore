@@ -1,0 +1,5 @@
+# Ignore Terraform state and plugins
+*.tfstate
+*.tfstate.backup
+.terraform/
+*.tfvars
